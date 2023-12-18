@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1725794241
+CRC: 704458351
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -7,9 +7,13 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: shader
     Info_1:
-      Name: cubemulticompile
+      Name: cubelit
       Dependencies:
         Dependency_0: shader
     Info_2:
+      Name: cubemulticompile
+      Dependencies:
+        Dependency_0: shader
+    Info_3:
       Name: shader
       Dependencies: {}

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 58897696
+CRC: 2360575759
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 039648ea22aec0ce5416e98a8a5c43e4
+    Hash: b920b7c9ef9d67f11b5082eab4f99475
   TypeTreeHash:
     serializedVersion: 2
     Hash: cc2f1175e7234051106bd63d3c6b2f3e
@@ -23,6 +23,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Res/CubeMultiCompile.prefab
+- Assets/Res/CubeLit.prefab
 Dependencies:
 - D:/wx/unity_cases/Variants_Proj/Assets/StreamingAssets/assets/shader

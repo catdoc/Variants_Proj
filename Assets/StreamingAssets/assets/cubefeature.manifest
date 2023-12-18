@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2192497473
+CRC: 2252933415
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6c80d065d7f22f984d16555f419ce484
+    Hash: f3c72c45681fc404f60d885ef3becb1b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 767a59f8de390d2354823e760c737a44
+    Hash: cc2f1175e7234051106bd63d3c6b2f3e
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,4 +25,4 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Res/CubeFeature.prefab
 Dependencies:
-- /Users/huailiang.peng/Documents/unity/Variants_Proj/Assets/StreamingAssets/assets/shader
+- D:/wx/unity_cases/Variants_Proj/Assets/StreamingAssets/assets/shader
