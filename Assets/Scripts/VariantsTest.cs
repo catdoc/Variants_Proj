@@ -34,6 +34,7 @@ public class VariantsTest : MonoBehaviour
     }
 
     bool bGameStarted = false;
+    bool bWarmUp = false;
 
     void Start()
     {
@@ -97,12 +98,6 @@ public class VariantsTest : MonoBehaviour
             {
                 Profiler.BeginSample("LoadVariants");
                 LoadVariants();
-                LoadCube("cubemulticompile", new Vector3(2, 0, 0));
-                LoadCube("cubeunlit", new Vector3(2, 2, 0));
-                LoadCube("cubenewsurface", new Vector3(2, -2, 0));
-                LoadCube("cubefeature", new Vector3(-2, 0, 0));
-                LoadCube("cubelit", new Vector3(-2, 2, 0));
-                LoadCube("cubesurface", new Vector3(-2, -2, 0));
                 Profiler.EndSample();
             }
             else 
@@ -110,6 +105,21 @@ public class VariantsTest : MonoBehaviour
                 UnityEngine.Debug.Log("bGameStarted is false");
             }
         }
+
+        if (GUI.Button(new Rect(250, 20, 200, 100), "LoadMeshes"))
+        {
+            if (bGameStarted)
+            {
+                Profiler.BeginSample("LoadMeshes");
+                LoadMeshes();
+                Profiler.EndSample();
+            }
+            else 
+            {
+                UnityEngine.Debug.Log("bGameStarted is false");
+            }
+        }
+
 // #if 0
 //         if (GUI.Button(new Rect(20, 140, 200, 100), "LoadVariants - Mat"))
 //         {
@@ -153,6 +163,23 @@ public class VariantsTest : MonoBehaviour
             UnityEngine.Debug.Log("mat: " + mat.name);
         }
         // b.Unload(false);
+    }
+
+    private void LoadMeshes() 
+    {
+        Stopwatch sw = new Stopwatch();
+		sw.Start();
+        
+        LoadCube("cubemulticompile", new Vector3(2, 0, 0));
+        LoadCube("cubeunlit", new Vector3(2, 2, 0));
+        LoadCube("cubenewsurface", new Vector3(2, -2, 0));
+        LoadCube("cubefeature", new Vector3(-2, 0, 0));
+        LoadCube("cubelit", new Vector3(-2, 2, 0));
+        LoadCube("cubesurface", new Vector3(-2, -2, 0));
+
+        sw.Stop();
+		UnityEngine.Debug.Log(string.Format("LoadMeshes total: {0} ms",sw.ElapsedMilliseconds));
+
     }
 
     private void LoadMat(string mat)
