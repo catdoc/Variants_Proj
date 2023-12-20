@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2794488526
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e1feef2fe0a0caf22cc4bbe898173673
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cc2f1175e7234051106bd63d3c6b2f3e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/CubeUnlit.prefab
+Dependencies:
+- D:/wx/unity_cases/Variants_Proj/Assets/StreamingAssets/assets/shader

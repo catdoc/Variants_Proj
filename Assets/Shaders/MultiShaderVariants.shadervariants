@@ -21,6 +21,8 @@ ShaderVariantCollection:
       - keywords: _ALPHATEST_ON _EMISSION _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECGLOSSMAP
           _SPECULAR_SETUP
         passType: 11
+      - keywords: 
+        passType: 13
       - keywords: DIRLIGHTMAP_COMBINED FOG_LINEAR INSTANCING_ON LIGHTMAP_ON _ADDITIONAL_LIGHTS
           _ADDITIONAL_LIGHT_SHADOWS _ALPHAPREMULTIPLY_ON _ALPHATEST_ON _EMISSION
           _ENVIRONMENTREFLECTIONS_OFF _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE
@@ -90,6 +92,20 @@ ShaderVariantCollection:
           _MIXED_LIGHTING_SUBTRACTIVE _NORMALMAP _OCCLUSIONMAP _RECEIVE_SHADOWS_OFF
           _SHADOWS_SOFT _SPECULARHIGHLIGHTS_OFF _SPECULAR_SETUP
         passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP INSTANCING_ON
+        passType: 13
+      - keywords: FOG_EXP2
+        passType: 13
+      - keywords: FOG_EXP2 INSTANCING_ON
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR INSTANCING_ON
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
       - keywords: INSTANCING_ON _ALPHATEST_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
         passType: 13
       - keywords: _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
@@ -108,3 +124,45 @@ ShaderVariantCollection:
         passType: 0
       - keywords: _CL_G
         passType: 0
+  - first: {fileID: 4800000, guid: 5f1864addb451f54bae8c86d230f736e, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: 9fb95171b49e6a94fa9ef28236cf856e, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL
+        passType: 4
+      - keywords: DIRECTIONAL DYNAMICLIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DYNAMICLIGHTMAP_ON LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_ON LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 4800000, guid: b3e7dccc38735024d943118442397603, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: 6a2e839cc0cd22b4890cb3d77a06bf65, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL
+        passType: 4
+      - keywords: DIRECTIONAL DYNAMICLIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DYNAMICLIGHTMAP_ON LIGHTMAP_ON
+        passType: 4

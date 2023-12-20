@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 946794274
+CRC: 1195285070
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 999ab2c189a9e63fbdb622719f818d93
+    Hash: 421503c0249ebb40ac9a5de231e6c114
   TypeTreeHash:
     serializedVersion: 2
     Hash: cd635620cf9a4b3de3303b6c936b2d45
@@ -17,9 +17,15 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Res/Mat_NewSurface.mat
+- Assets/Res/Mat_Surface.mat
+- Assets/Shaders/UnlitShader.shader
+- Assets/Res/Mat_Unlit.mat
 - Assets/Res/Mat_ShaderFeature.mat
+- Assets/Shaders/NewSurfaceShader.shader
 - Assets/Shaders/MultiCompile.shader
 - Assets/Res/Mat_Lit.mat
+- Assets/Shaders/SurfaceShader.shader
 - Assets/Res/Mat_MultiCompile.mat
 - Assets/Shaders/ShaderFeature.shader
 - Assets/Shaders/MultiShaderVariants.shadervariants

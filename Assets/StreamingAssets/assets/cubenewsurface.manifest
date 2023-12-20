@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 1331102144
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bdc9172314b29114e4b82b0dc58b07c0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cc2f1175e7234051106bd63d3c6b2f3e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/CubeNewSurface.prefab
+Dependencies:
+- D:/wx/unity_cases/Variants_Proj/Assets/StreamingAssets/assets/shader

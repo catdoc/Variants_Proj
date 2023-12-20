@@ -48,6 +48,9 @@ public class VariantsTest : MonoBehaviour
             "cubemulticompile",
             "cubefeature",
             "cubelit",
+            "cubesurface",
+            "cubenewsurface",
+            "cubeunlit",
         };
 
         foreach (var asset in assets)
@@ -95,8 +98,11 @@ public class VariantsTest : MonoBehaviour
                 Profiler.BeginSample("LoadVariants");
                 LoadVariants();
                 LoadCube("cubemulticompile", new Vector3(2, 0, 0));
+                LoadCube("cubeunlit", new Vector3(2, 2, 0));
+                LoadCube("cubenewsurface", new Vector3(2, -2, 0));
                 LoadCube("cubefeature", new Vector3(-2, 0, 0));
                 LoadCube("cubelit", new Vector3(-2, 2, 0));
+                LoadCube("cubesurface", new Vector3(-2, -2, 0));
                 Profiler.EndSample();
             }
             else 
@@ -133,7 +139,7 @@ public class VariantsTest : MonoBehaviour
 		sw.Start();
         svc.WarmUp();
         sw.Stop();
-		UnityEngine.Debug.Log(string.Format("WarmUp total: {0} ms",sw.ElapsedMilliseconds));
+		UnityEngine.Debug.Log(string.Format("WarmUp total: {0} ms, shader count: {1}, variant count: {2}",sw.ElapsedMilliseconds, svc.shaderCount, svc.variantCount));
 
         // svc的WarmUp就会触发相关Shader的预编译，触发预编译之后再加载Shader Asset即可
         var shaders = b.LoadAllAssets<Shader>();
